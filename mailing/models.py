@@ -12,8 +12,8 @@ class Mailing(models.Model):
         return self.text
 
 class Client(models.Model):
-    tel_num = models.BigIntegerField(max_length=11)
-    operator_code = models.IntegerField(max_length=4)
+    tel_num = models.BigIntegerField()
+    operator_code = models.IntegerField()
     tag = models.CharField(max_length=100)
     timezone = models.CharField(max_length=10)
 
